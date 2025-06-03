@@ -27,7 +27,7 @@ menu = st.sidebar.radio("Menu", ["Dashboard", "Add Entry", "View Data"])
 if menu == "Dashboard":
     st.subheader("📈 Monthly Overview")
     col1, col2 = st.columns(2)
-    
+
     col1.metric("Total Income", f"₱{income_df['TOTAL'].sum():,.2f}")
     col2.metric("Total Expenses", f"₱{expense_df['TOTAL AMOUNT'].sum():,.2f}")
 
